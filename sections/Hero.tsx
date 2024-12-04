@@ -2,10 +2,22 @@ import Image from "next/image";
 import portfolioImg from "@/public/images/portfolio-img1.png";
 import heroImg from "@/public/images/memoji-computer.png";
 import ArrowDown from "@/public/icons/arrow-down.svg";
+import grainImg from "@/public/images/grain.jpg";
 
 const Hero = () => {
   return (
-    <main className="py-32 md:py-48 lg:py-60">
+    <main className="py-32 md:py-48 lg:py-56 relative z-0 overflow-x-clip">
+      <div
+        className="absolute inset-0 -z-30 opacity-5"
+        style={{
+          backgroundImage: `url(${grainImg.src})`,
+        }}
+      ></div>
+      <div className="size-[680px] hero-ring"></div>
+      <div className="size-[880px] hero-ring"></div>
+      <div className="size-[1080px] hero-ring"></div>
+      <div className="size-[1280px] hero-ring"></div>
+      <div className="size-[1520px] hero-ring"></div>
       <div className="container">
         <div className="flex flex-col justify-center items-center">
           <Image src={heroImg} className="size-[100px]" alt="portfolio-img" />
