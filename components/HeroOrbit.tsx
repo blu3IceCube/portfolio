@@ -16,7 +16,7 @@ const HeroOrbit = ({
         }}
       >
         <div
-          className=" inline-flex"
+          className="inline-flex"
           style={{
             transform: `rotate(${rotation * -1}deg)`,
           }}
