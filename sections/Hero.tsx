@@ -10,7 +10,7 @@ import HeroOrbit from "@/components/HeroOrbit";
 const Hero = () => {
   return (
     <main className="py-32 md:py-48 lg:py-56 relative z-0 overflow-x-clip">
-      <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_20%,black_60%,transparent)]">
+      <div className="absolute inset-0 -z-20 [mask-image:linear-gradient(to_bottom,transparent,black_20%,black_60%,transparent)]">
         <div
           className="absolute inset-0 -z-30 opacity-5"
           style={{
@@ -22,6 +22,7 @@ const Hero = () => {
         <div className="size-[1080px] hero-ring"></div>
         <div className="size-[1280px] hero-ring"></div>
         <div className="size-[1520px] hero-ring"></div>
+
         <HeroOrbit size={820} rotation={-65}>
           <StarIcon className="size-24 text-emerald-300" />
         </HeroOrbit>
